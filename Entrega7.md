@@ -48,12 +48,8 @@ Muestre un ejemplo de cómo resolvió en el TP cada uno de los siguientes temas:
     * Inspeccionar jugadores    
   
 
-* Ventana principal
-  * Organizar Equipos
-    * Inspeccionar jugadores  
-  * Buscar jugadores
-    * Inspeccionar jugadores    
+ 
   8. ¿Cómo se pasa información de una vista a otra?
-    *
+    * Esta se para de 2 modos: Mediante el constructor de la nueva vista (como inspeccionar jugador y generar equipo), o se consigue pidiendosela a la home correspondiente (buscar jugador no recibe los jugadores en el constructor, sino que tiene especificado en su método de inicialización pedirle todos los jugadores a la home de jugadores)
 
 
