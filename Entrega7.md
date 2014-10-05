@@ -15,7 +15,15 @@ Muestre un ejemplo de cómo resolvió en el TP cada uno de los siguientes temas:
   
 
   3. Manejo del estado conversacional de los datos que se cargan en la vista
-   
+    * Cada ventana necesita distintos juegos de datos (su respectivo application model o en el caso de la ventana para inspecionar jugadores a este en cuestión), aunque había algunos que se repetian (los jugadores, los partidos). Decidimos persistir los jugadores y los partidos (datos puros del dominio) a dos homes (homeJugadores y homePartidos), para que los application models puedan conseguir (si necesitan) a estos. Hubo que primero instanciar jugadores y luego partidos, para poder subscribirlos.
+
+
+|  Ventana principal | Ventana de busqueda | Ventana de organización | Ventana de jugador|
+|:------------------:|:-------------------:|:-----------------------:|:-----------------:|
+| Partidos via home, instancia su applicationModel al crearse|Jugadores via Home, instancia su applicationModel al crearse |   Recibe al partido seleccionado al crearse|Recibe al jugador al crearse |                   
+
+
+
 
   4. Binding unidireccional o bidireccional, comenten con cuál de los dos trabajaron y por qué.
   
