@@ -19,9 +19,9 @@ Muestre un ejemplo de cómo resolvió en el TP cada uno de los siguientes temas:
     * La ventana para generar equipos trabaja todo sobre un clon del partido, así si el usuario pone cancelar, no se produce ningún cambio (al usar bindings me modificaria el partido todo el tiempo, haciendo imposible volver atrás)
 
 
-|  Ventana principal | Ventana de busqueda | Ventana de organización | Ventana de jugador|
-|:------------------:|:-------------------:|:-----------------------:|:-----------------:|
-| Partidos via home, instancia su applicationModel al crearse|Jugadores via Home, instancia su applicationModel al crearse |   Recibe el partido seleccionado al crearse|Recibe el jugador seleccionado al crearse |                   
+  |  Ventana principal | Ventana de busqueda | Ventana de organización | Ventana de jugador|
+  |:------------------:|:-------------------:|:-----------------------:|:-----------------:|
+  | Partidos via home, instancia su applicationModel al crearse|Jugadores via Home, instancia su applicationModel al crearse |    Recibe el partido seleccionado al crearse|Recibe el jugador seleccionado al crearse |                   
 
 
 
