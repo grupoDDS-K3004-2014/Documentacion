@@ -10,7 +10,7 @@ Muestre un ejemplo de cómo resolvió en el TP cada uno de los siguientes temas:
   2. Separación entre modelo y vista ⇒ grado de acoplamiento entre ambos concerns
     * A la hora de realizar la vista, logramos hacer que el dominio no esté acoplado a la vista, ya que en este solo estan las reglas de negocio (ordenar equipos, separarlos, inscribir jugador) y nada relacionado con cosas necesarias para la vista. Lo que se necesitó agregar para la UI, fué incluido en los distintos application models que utilizamos (por ejemplo en la AM del organizador de equipos se incluyó un atributo que servia como criterio compuesto de ordenamiento, así podíamos meter todos los criterios que marcaba el usuario, sin agregar comportamiento al partido). 
     * El único punto flojo fue que agregamos un atributo de confirmación al partido, ya que necesitabamos saber si el partido estaba confirmado, y no se nos ocurrió ninguna otra forma. También fué necesario agregar la annotation @Observable e implementar Entity en las clases que se iban a mostrar en pantalla. Sin embargo, tranquilamente se podría cambiar la vista por otra, ya que están ubicados en dos proyectos distintos (mostrando aún más la independencia del dominio hacia la vista).
-    * Resumen: Vista acoplada con el dominio (ya que está totalmente basada en el), pero el dominio está desacoplado de la vista (estas podrian ser intercambiables)
+    * Resumen: Vista acoplada con el dominio (ya que está totalmente basada en el), pero el dominio está desacoplado de la vista (esta podria ser intercambiable)
   
   
 
@@ -40,16 +40,14 @@ Muestre un ejemplo de cómo resolvió en el TP cada uno de los siguientes temas:
 
   7. ¿Cómo es el flujo de una vista a otra?
     * Se puede bajar en el "arbol" de ventanas mediante botones, pero para subir es necesario aceptar, cancelar o tocar la cruz en los dialogos que se abran
+     * Ventana principal
+       * Organizar Equipos
+         * Inspeccionar jugadores  
+        * Buscar jugadores
+          * Inspeccionar jugadores    
 
-* Ventana principal
-  * Organizar Equipos
-    * Inspeccionar jugadores  
-  * Buscar jugadores
-    * Inspeccionar jugadores    
-  
 
- 
   8. ¿Cómo se pasa información de una vista a otra?
-    * Esta se para de 2 modos: Mediante el constructor de la nueva vista (como inspeccionar jugador y generar equipo), o se consigue pidiendosela a la home correspondiente (buscar jugador no recibe los jugadores en el constructor, sino que tiene especificado en su método de inicialización pedirle todos los jugadores a la home de jugadores)
+    * Esta se pasa de 2 modos: Mediante el constructor de la nueva vista (como inspeccionar jugador y generar equipo), o se consigue pidiendosela a la home correspondiente (buscar jugador no recibe los jugadores en el constructor, sino que tiene especificado en su método de inicialización pedirle todos los jugadores a la home de jugadores)
 
 
