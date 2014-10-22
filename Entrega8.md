@@ -4,6 +4,7 @@ Documentacion
 [Imagen DER](http://i.imgur.com/1WKKxRX.png)
 
 En respuesta a los requerimientos solicitados en el punto 3 de la entrega 8 del TP:
+
 a. Saber los jugadores malos, con un hándicap de 5 ó menos.
 
 Esto se logra consultando el campo *handicap* de la tabla *Participantes*:
