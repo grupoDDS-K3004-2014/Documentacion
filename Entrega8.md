@@ -6,8 +6,8 @@ Documentacion
 En respuesta a los requerimientos solicitados en el punto 3 de la entrega 8 del TP:
 a.	Saber los jugadores malos, con un hándicap de 5 ó menos.
 
-Esto se logra consultando el campo handicap de la tabla Participantes:
-1.	Select sobre la tabla Participantes de aquellos cuyo handicap sea menor a 5.
+Esto se logra consultando el campo *handicap* de la tabla *Participantes*:
+1.	**Select** sobre la tabla Participantes de aquellos cuyo handicap sea menor a 5.
 2.	Project de la tabla obtenida en (1) de los campos idParticipante, nombre y apellido.
 
 
